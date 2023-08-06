@@ -4,16 +4,16 @@ const User = require("../models/UserModel.js");
 const bcrypt = require("bcrypt");
 const loginController = {
     getLogin: function(req, res){
-        res.render("login");
-        // if(req.session.username){
-        //     res.redirect('/profile/' + req.session.username);
-        // }
-        // else{
-        //     details = {
-        //         flag: false
-        //     };
-        //     res.render("login", details);
-        // }
+        //res.render("login");
+         if(req.session.username){
+             res.redirect('/profile/' + req.session.username);
+         }
+         else{
+             details = {
+                 flag: false
+             };
+             res.render("login", details);
+         }
 
     },
 

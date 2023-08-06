@@ -31,6 +31,7 @@
         <!--<a href="forums.html">Forums</a>-->
         <a href="/about">About</a>
         <a class = "btn btn-lg btn-success px-5 py-2" href = "/user/{{username}}"><i class="fa-solid fa-user"></i> {{username}} </a>
+        <a class="btn btn-lg btn-outline-primary px-5 py-2" href="/logout">Logout</a>
     </nav>
 </div>
 
@@ -56,7 +57,7 @@
 
                     <div class="d-flex flex-column bd-highlight">
                         <div class="p-2 bd-highlight post-info">
-                            <a href="" class="text-dark"><b>{{PostUser}}</b></a> posted on <b><a href=""
+                            <a href="{{PostUser}}"  class="text-dark"><b>{{PostUser}}</b></a> posted on <b><a href=""
                                                                                                  class="text-dark">Car Forum</a></b> <i>Posted on {{PostTime}}</i>
                         </div>
                         <div class="post-title">
@@ -112,6 +113,8 @@
                 </div>
             </div>
         {{/each}}
+    </div>
+    </div>
 <div class="fixed-components">
     <a class="btn btn-primary post-button" id="open-create-post" href="/post/{{username}}">Create Post!</a>
 </div>

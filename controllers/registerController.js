@@ -6,16 +6,17 @@ const bcrypt = require("bcrypt");
 const registerController = {
     getRegister: function(req, res){
         // var details = {};
-        // if(req.session != null){
-        //     details.flag = true;
-        //     details.name = req.session.username;
-        //     details.email = req.session.email;
-        // }
-        // else{
-        //     details.flag = false;
+        //  if(req.session != null){
+        //      details.flag = true;
+        //      details.name = req.session.username;
+        //      details.email = req.session.email;
+        //  }
+        //  else{
+        //      details.flag = false;
         //
-        // }
-        res.render("register", details);
+        //  }
+        res.render("register")
+        //res.render("register", details);
     },
 
     postRegister: async function(req, res){
@@ -34,7 +35,7 @@ const registerController = {
 
             db.insertOne(User, user, function(flag){
                 if(flag){
-                    res.render("success");
+                    res.render("profile/" + username);
                 }else{
                     res.render("error");
                 }

@@ -7,14 +7,26 @@ const profileController = {
     getProfile: async function (req, res) {
         console.log(req.params.username);
         var query = {username: req.params.username};
-        var postQuery = {PostUser: req.params.username};
+        var postQuery = {};
         var projection = 'username email'
+
+        /*
+            var details = {}
+            if(req.session.username){
+                details.flag = true;
+                details.username = req.session.username;
+                details.email = req.session.email;
+            }
+            else
+                details.flag = false;
+        */
 
         var result = await db.findOne(User, query, projection);
         var proj = 'PostUser PostTitle PostDescription PostImage PostTime'
         var posts = await db.findMany(Post, postQuery, proj);
         if (result != null) {
             var postDetails = posts.map(post => ({
+                PostUser: post.PostUser,
                 PostTitle: post.PostTitle,
                 PostTime: post.PostTime,
                 PostDescription: post.PostDescription
@@ -28,6 +40,7 @@ const profileController = {
             console.log(userDetails);
             res.render('profile',userDetails);
         }
+
 
     },
     postProfile: async function (req, res){

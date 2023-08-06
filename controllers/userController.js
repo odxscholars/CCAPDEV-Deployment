@@ -6,18 +6,21 @@ const User = require("../models/UserModel.js");
 const userController = {
     getUser: async function (req, res) {
         console.log(req.params.username);
-        var query = {username: req.params.username};
+        console.log("went here")
 
-        var projection = 'username email'
+        var query = { username: req.params.username };
+        var postQuery = { PostUser: req.params.username }; // Use the logged-in user's username
+        var projection = 'username email';
 
         var result = await db.findOne(User, query, projection);
-        console.log("result is " + result);
+        var proj = 'PostUser PostTitle PostDescription PostImage PostTime';
 
         if (result != null) {
-            var proj = 'PostUser PostTitle PostDescription PostImage PostTime'
-            var posts = await db.findMany(Post, query, proj);
+            console.log(result)
+            var posts = await db.findMany(Post, postQuery, proj);
 
             var postDetails = posts.map(post => ({
+                PostUser: post.PostUser,
                 PostTitle: post.PostTitle,
                 PostTime: post.PostTime,
                 PostDescription: post.PostDescription
@@ -28,12 +31,13 @@ const userController = {
                 email: result.email,
                 posts: postDetails
             };
-
-            res.render('user', { userdataset: userDetails });
-        } else {
-            res.render('error');
+            console.log(userDetails);
+            res.render('user', userDetails);
+        }else{
+            console.log("went here2")
         }
     }
 }
 
 module.exports = userController;
+
