@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+        integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/85037e36e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Home</title>
+</head>
+
+<body class="bg-secondary">
+    <div class="site-navbar navbar navbar-dark bg-dark pb-4">
+        <div class="logo">
+            <a class="navbar-brand" href="index.html">
+                <i class="fa-solid fa-car-side"></i>
+                <span class="cel">Check Engine Light</span>
+            </a>
+        </div>
+        <div class="input-group">
+            <span class="input-group-text" id="search-bar">
+                <i class="fas fa-magnifying-glass"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Whatcha lookin for?" aria-label="#"
+                aria-describedby="search-bar">
+            <button type="button" class="btn btn-primary">Search</button>
+        </div>
+        <nav class="nav-items">
+            
+<!--            <a href="forums.html">Forums</a>-->
+            <a href="about.html">About</a>
+            <a class="btn btn-lg btn-outline-primary px-5 py-2" href="login.html">Login</a>
+            <!--            <button class="login-button" href = "login.html" >Login</button>-->
+        </nav>
+    </div>
+
+
+    <!--POST DIV-->
+    <div class="col-lg-10 shadow-lg mt-4" id="content-space" style="background-color: #27374D">
+        <!-- LOGIN PROMPT -->
+        <div class="bg-modal">
+            <div class="modal-content" id="mc-logged-out">
+                <div class="logo">
+                    <a class="navbar-brand" style="margin-bottom: 5px;">
+                        <i class="fa-solid fa-car-side"></i>
+                    </a>
+                </div>
+                <p> Want to share your thoughts? </p>
+                <p> Join our community to be part of </p>
+                <p> the hottest discussions today! </p>
+                <br>
+                <a class="btn btn-lg btn-outline-primary px-5 py-2" href="login.html">Login</a>
+                <br>
+                <p style="line-height: 0px;"> or </p>
+                <br>
+                <a class="btn btn-lg btn-outline-success px-5 py-2" href="register.html">Register</a>
+                <br>
+                <button id="close-window">Cancel</button>
+            </div>
+        </div>
+        
+        <div id="post-section ">
+            <!-- POST 1 -->
+            <div class="post  container-fluid mt-5 mb-4   rounded">
+
+
+                <div class="d-flex flex-row justify-content-start">
+                    <div class="d-flex flex-column">
+                        <div class="mt-3 user-icon m-2 bg-muted rounded">
+                            <img src="https://us-tuna-sounds-images.voicemod.net/3c0e6fe3-c69d-4f51-9cbe-7800439efbe4-1658809062266.jpg" class = "profile-avatar img-fluid border border-dark rounded" alt="" >
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex flex-column bd-highlight">
+                        <div class="p-2 bd-highlight post-info">
+                            <a href="" class="text-dark"><b>Barack Obama</b></a> posted on <b><a href=""
+                                    class="text-dark">Mustang Forum</a></b> <i>Posted 1 hour ago</i>
+                        </div>
+                        <div class="post-title">
+                            <div class="pt-1 pl-2 "> <b>Got that shelby #takeover 🥷🔥🇺🇸</b></div>
+                        </div>
+                        <div class="pl-2 pb-2  bd-highlight">Revvin' up the intersection vibes! 🚗💨 Who needs traffic lights when you've got the takeover crew?</div>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="d-flex flex-row">
+                    <div class="vote-div d-flex flex-column">
+                        <button class=" btn btn-outline-dark vote-up-icon p-1 m-2 bg-muted rounded login-prompt">
+                            <i class="fa fa-arrow-up"></i>
+                        </button>
+                        <div class="post-vote-count">
+                            0
+                        </div>
+                        <button class=" btn btn-outline-dark vote-up-icon p-1 m-2 bg-muted rounded login-prompt">
+                            <i class="fa fa-arrow-down"></i>
+                        </button>
+
+                    </div>
+
+
+
+                    <div class="img-post d-flex flex-column">
+                        <div class="img-content  mr-5 ml-4 mt-3">
+                            <img src="./img/obama_stang.jpg" class="rounded img-fluid" alt="">
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="d-flex flex-row post-buttons">
+                    <div class="flex-column">
+                        <button class="btn btn-sm btn-outline-dark mr-2 login-prompt"><i class="fa-solid fa-comment"></i>
+                            Comments</button>
+                    </div>
+                    <div class="flex-column">
+                        <button class="btn btn-sm btn-outline-dark mr-2 login-prompt"><i class="fa-solid fa-share"></i>
+                            Share</button>
+                    </div>
+                    <div class="flex-column">
+                        <button class="btn btn-sm btn-outline-dark mr-2 login-prompt"><i class="fa-solid fa-bookmark"></i>
+                            Save</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <!-- POST 2 -->
+            <div class="post  container-fluid mt-5 mb-4   rounded">
+                <div class="d-flex flex-row  justify-content-start ">
+
+
+
+                    <div class="d-flex flex-column">
+                        <div class="user-icon m-2 mt-3 bg-muted rounded">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Joe_Biden_presidential_portrait.jpg/640px-Joe_Biden_presidential_portrait.jpg" class = "profile-avatar img-fluid border border-dark rounded" alt="" >
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex flex-column bd-highlight">
+
+
+
+                        <div class="p-2 bd-highlight post-info">
+                            <a href="" class="text-dark"><b>JoeBidenXXX</b></a> posted on <b><a href=""
+                                    class="text-dark">Corvette Forum</a></b> <i>Posted 2 hours ago</i>
+                        </div>
+                        <div class="post-title">
+                            <div class="pt-1 pl-2 "> <b>Green '67 Corvette</b></div>
+                        </div>
+                        <div class="pl-2 pb-2  bd-highlight">Taking the 67' vette out for a drive!</div>
+
+
+
+                    </div>
+                </div>
+
+                <div class="d-flex flex-row">
+
+
+                    <div class="vote-div d-flex flex-column">
+                        <button class=" btn btn-outline-dark vote-up-icon p-1 m-2 bg-muted rounded login-prompt">
+                            <i class="fa fa-arrow-up"></i>
+                        </button>
+                        <div class="post-vote-count">
+                            0
+                        </div>
+                        <button class=" btn btn-outline-dark vote-up-icon p-1 m-2 bg-muted rounded login-prompt">
+                            <i class="fa fa-arrow-down"></i>
+                        </button>
+
+                    </div>
+                    <div class="img-post d-flex flex-column">
+                        <div class="img-content  mr-5 ml-4 mt-3">
+                            <img src="./img/biden_vette.webp" class="rounded img-fluid" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="d-flex flex-row post-buttons">
+                    <div class="flex-column">
+                        <button class="btn btn-sm btn-outline-dark mr-2 login-prompt"><i class="fa-solid fa-comment"></i>
+                            Comments</button>
+                    </div>
+                    <div class="flex-column">
+                        <button class="btn btn-sm btn-outline-dark mr-2 login-prompt"><i class="fa-solid fa-share"></i>
+                            Share</button>
+                    </div>
+                    <div class="flex-column">
+                        <button class="btn btn-sm btn-outline-dark mr-2 login-prompt"><i class="fa-solid fa-bookmark"></i>
+                            Save</button>
+                    </div>
+                </div>
+            </div>
+            <!--POST 3-->
+            <div class="post  container-fluid mt-5 mb-4   rounded">
+
+
+                <div class="d-flex flex-row  justify-content-start ">
+                    <div class="d-flex flex-column">
+                        <div class="user-icon m-2 mt-3 bg-muted rounded">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Donald_Trump_official_portrait.jpg/1200px-Donald_Trump_official_portrait.jpg" class = "profile-avatar img-fluid border border-dark rounded" alt="" >
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex flex-column bd-highlight">
+                        <div class="p-2 bd-highlight post-info">
+                            <a href="" class="text-dark"><b>Donald Trump</b></a> posted on <b><a href=""
+                                    class="text-dark">Coach Forum</a></b> <i>Posted 2d ago</i>
+                        </div>
+                        <div class="post-title">
+                            <div class="pt-1 pl-2 "> <b>Need help with bugged bus</b></div>
+                        </div>
+                        <div class="pl-2 pb-2  bd-highlight">Got into some hot water lately, how do I keep a bus 'mic-free'?</div>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="d-flex flex-row">
+                    <div class="vote-div d-flex flex-column">
+                        <button class=" btn btn-outline-dark vote-up-icon p-1 m-2 bg-muted rounded login-prompt">
+                            <i class="fa fa-arrow-up"></i>
+                        </button>
+                        <div class="post-vote-count">
+                            -5
+                        </div>
+                        <button class=" btn btn-outline-dark vote-up-icon p-1 m-2 bg-muted rounded login-prompt">
+                            <i class="fa fa-arrow-down"></i>
+                        </button>
+
+                    </div>
+
+
+
+                    <div class="img-post d-flex flex-column">
+                        <div class="img-content  mr-5 ml-4 mt-3">
+                            <img src="./img/trump.jpg" class="rounded img-fluid" alt="">
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="d-flex flex-row post-buttons">
+                    <div class="flex-column">
+                        <button class="btn btn-sm btn-outline-dark mr-2 login-prompt"><i class="fa-solid fa-comment"></i>
+                            Comments</button>
+                    </div>
+                    <div class="flex-column">
+                        <button class="btn btn-sm btn-outline-dark mr-2 login-prompt"><i class="fa-solid fa-share"></i>
+                            Share</button>
+                    </div>
+                    <div class="flex-column">
+                        <button class="btn btn-sm btn-outline-dark mr-2 login-prompt"><i class="fa-solid fa-bookmark"></i>
+                            Save</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--POST 4-->
+            <div class="post  container-fluid mt-5 mb-4   rounded">
+
+
+                <div class="d-flex flex-row  justify-content-start ">
+                    <div class="d-flex flex-column">
+                        <div class="user-icon m-2 mt-3 bg-muted rounded">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/John_F._Kennedy%2C_White_House_color_photo_portrait.jpg/1200px-John_F._Kennedy%2C_White_House_color_photo_portrait.jpg" class = "profile-avatar img-fluid border border-dark rounded" alt="" >
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex flex-column bd-highlight">
+                        <div class="p-2 bd-highlight post-info">
+                            <a href="" class="text-dark"><b>John F. Kennedy</b></a> posted on <b><a href=""
+                                    class="text-dark">Drop-top Forum</a></b> <i>Posted 1w ago</i>
+                        </div>
+                        <div class="post-title">
+                            <div class="pt-1 pl-2 "> <b>Cruisin' Convertible-Style with the First Lady!</b></div>
+                        </div>
+                        <div class="pl-2 pb-2  bd-highlight">"Cruisin' in style with the First Lady, top-down vibes all the way! Buckle up for a presidential joyride like no other. #FirstLadyAdventures #TopDownCruise"</div>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="d-flex flex-row">
+                    <div class="vote-div d-flex flex-column">
+                        <button class=" btn btn-outline-dark vote-up-icon p-1 m-2 bg-muted rounded login-prompt">
+                            <i class="fa fa-arrow-up"></i>
+                        </button>
+                        <div class="post-vote-count">
+                            10
+                        </div>
+                        <button class=" btn btn-outline-dark vote-up-icon p-1 m-2 bg-muted rounded login-prompt">
+                            <i class="fa fa-arrow-down"></i>
+                        </button>
+                    </div>
+
+
+
+                    <div class="img-post d-flex flex-column">
+                        <div class="img-content  mr-5 ml-4 mt-3">
+                            <img src="./img/jfk.webp" class="rounded img-fluid" alt="">
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="d-flex flex-row post-buttons">
+                    <div class="flex-column">
+                        <button class="btn btn-sm btn-outline-dark mr-2 login-prompt"><i class="fa-solid fa-comment"></i>
+                            Comments</button>
+                    </div>
+                    <div class="flex-column">
+                        <button class="btn btn-sm btn-outline-dark mr-2 login-prompt"><i class="fa-solid fa-share"></i>
+                            Share</button>
+                    </div>
+                    <div class="flex-column">
+                        <button class="btn btn-sm btn-outline-dark mr-2 login-prompt"><i class="fa-solid fa-bookmark"></i>
+                            Save</button>
+                    </div>
+                </div>
+            </div>
+
+        
+            <!--POST 5-->
+            <div class="post  container-fluid mt-5 mb-4   rounded">
+
+
+                <div class="d-flex flex-row  justify-content-start ">
+                    <div class="d-flex flex-column">
+                        <div class="user-icon m-2 mt-3 bg-muted rounded">
+                            <!-- <i class="fa-solid fa-user fa-2x mx-auto"></i> -->
+                            <img src="https://www.2020mag.com/CMSImagesContent/2014/9/Guy-Nerd-glasses_w.png" class = "profile-avatar img-fluid border border-dark rounded" alt="" >
+                            
+                        </div>
+                    </div>
+
+
+
+                    <div class="d-flex flex-column bd-highlight">
+                        <div class="p-2 bd-highlight post-info">
+                            <a href="" class="text-dark"><b>AverageBMWOwner69</b></a> posted on <b><a href=""
+                                    class="text-dark">BMW Forum</a></b> <i>Posted 2mo ago</i>
+                        </div>
+                        <div class="post-title">
+                            <div class="pt-1 pl-2 "> <b>What is this?</b></div>
+                        </div>
+                        <div class="pl-2 pb-2  bd-highlight">Found this stick lever thingy behind my wheel, what does it do?</div>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="d-flex flex-row">
+                    <div class="vote-div d-flex flex-column">
+                        <button class=" btn btn-outline-dark vote-up-icon p-1 m-2 bg-muted rounded login-prompt">
+                            <i class="fa fa-arrow-up"></i>
+                        </button>
+                        <div class="post-vote-count">
+                            -2.7k
+                        </div>
+                        <button class=" btn btn-outline-dark vote-up-icon p-1 m-2 bg-muted rounded login-prompt">
+                            <i class="fa fa-arrow-down"></i>
+                        </button>
+
+                    </div>
+
+
+
+                    <div class="img-post d-flex flex-column">
+                        <div class="img-content  mr-5 ml-4 mt-3">
+                            <img src="./img/bmw.jpg" class="rounded img-fluid" alt="">
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="d-flex flex-row post-buttons">
+                    <div class="flex-column">
+                        <button class="btn btn-sm btn-outline-dark mr-2 login-prompt"><i class="fa-solid fa-comment"></i>
+                            Comments</button>
+                    </div>
+                    <div class="flex-column">
+                        <button class="btn btn-sm btn-outline-dark mr-2 login-prompt"><i class="fa-solid fa-share"></i>
+                            Share</button>
+                    </div>
+                    <div class="flex-column">
+                        <button class="btn btn-sm btn-outline-dark mr-2 login-prompt"><i class="fa-solid fa-bookmark"></i>
+                            Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="site-navbar">https://www.google.com/url?sa=i&url=https%3A%2F%2Fwhyy.org%2Farticles%2Ffederal-judge-agrees-to-expedite-trump-campaigns-lawsuit-over-vote-by-mail-in-pennsylvania%2F&psig=AOvVaw3DHIN5OHrs-CfkKCwNlRmK&ust=1687601977558000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJDPu7WV2f8CFQAAAAAdAAAAABAS
+        <nav class="navbar navbar-expand-lg pb-lg-2 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <i class="fa-solid fa-car-side"></i>
+                    Check Engine Light
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-target="collapse" data-bs-target="navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle Navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="input-group ">
+                    <span class="input-group-text" id="search-bar">
+                        <i class="fas fa-magnifying-glass"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="Whatcha lookin for?" aria-label="#" aria-describedby="search-bar">
+                    <button type="button" class="btn btn-primary">Search</button>
+                </div>
+                <div class="navbar-collapse d-flex justify-content-end" id="navbar-content">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" id="forums-link" href="forums.html">Forums</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="login-button">Login</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="main-content container-fluid">
+
+    -->
+    <div class="fixed-components">
+        <button class="btn btn-primary post-button" id="open-create-post0">Create Post!</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

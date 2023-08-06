@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/85037e36e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+   
+    <title>Register</title>
+</head>
+<body class = "bg-dark">
+<!-- <div class="site-navbar">
+    <div class="logo">
+        <a class="navbar-brand" href="index.html">
+            <i class="fa-solid fa-car-side"></i>
+            Check Engine Light
+        </a>
+    </div>
+    <div class="input-group">
+                        <span class="input-group-text" id="search-bar">
+                            <i class="fas fa-magnifying-glass"></i>
+                        </span>
+        <input type="text" class="form-control" placeholder="Whatcha lookin for?" aria-label="#" aria-describedby="search-bar">
+        <button type="button" class="btn btn-primary">Search</button>
+    </div>
+    <nav class="nav-items">
+        <a href="forums.html">Forums</a>
+        <a href="about.html">About</a>
+        <button class="login-button">Login</button>
+    </nav>
+</div> -->
+
+<form action="/register" method="post">
+    <div class="wrapper">
+        <div class="login-form">
+            <h2>Register</h2>
+                <div class="input-box">
+                    <span class="icon"><icon name="mail-outline"></icon></span>
+                    <input name="uName" type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><icon name="mail-outline"></icon></span>
+                    <input name="emailInput" type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><icon name="lock-closed-outline"></icon></span>
+                    <input name = "pwInput" type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><icon name="lock-closed-outline"></icon></span>
+                    <input name = "pwInputCon" type="password" required>
+                    <label>Confirm Password</label>
+                </div>
+                <button type="submit" class="btn btn-success">Register</button>
+            </form>
+        </div>
+    </div>
+</form>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

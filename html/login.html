@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/85037e36e5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/style.css">
+    <script src= "login.js"></script>
+    <title>Login</title>
+</head>
+<body class = "bg-dark">
+    <!-- <div class="site-navbar navbar navbar-dark bg-dark">
+        <div class="logo">
+            <a class="navbar-brand" href="index.html">
+                <i class="fa-solid fa-car-side"></i>
+                Check Engine Light
+            </a>
+        </div>
+        <div class="input-group">
+                        <span class="input-group-text" id="search-bar">
+                            <i class="fas fa-magnifying-glass"></i>
+                        </span>
+            <input type="text" class="form-control" placeholder="Whatcha lookin for?" aria-label="#" aria-describedby="search-bar">
+            <button type="button" class="btn btn-primary">Search</button>
+        </div>
+        <nav class="nav-items">
+            <a href="forums.html">Forums</a>
+            <a href="about.html">About</a>
+            <button class="login-button">Login</button>
+        </nav>
+    </div> -->
+    <form action="/login" method="post">
+        <div class="wrapper">
+            <div class="login-form">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input id = "email-input" name = "emailInput" type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                        <input id = "login-pass" name="passwordInput" type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-me">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password</a>
+                    </div>
+                    <button type="submit" class="btn btn-success" id = "submit">Login</button>
+                    <div class="register">
+                        <p>Don't have an account?<a href="register.html"> Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </form>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
